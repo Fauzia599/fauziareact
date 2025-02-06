@@ -24,7 +24,7 @@ const Register = () => {
         e.preventDefault();
 
         try {
-            const response = await axios.post("http://127.0.0.1:8000/api/Cleaner/", {
+            const response = await axios.post("https://djaback.onrender.com/api/Cleaner/", {
                 Name: formData.Name,
         Phone_no:formData.Phone_no,
         Gender:formData.Gender,
