@@ -18,7 +18,7 @@ const Login = () =>{
       setSuccessMessage(''); // Clear previous success message
 
       try {
-        const response = await axios.post('http://localhost:8000/api/Cleaner_Login/', {
+        const response = await axios.post('https://djaback.onrender.com/api/Cleaner_Login/', {
           Email,
           Password,
         });
