@@ -17,7 +17,7 @@ const ManageTask = () => {
     useEffect(() => {
         const fetchTasks = async () => {
             try {
-                const response = await axios.get("http://127.0.0.1:8000/api/Task");
+                const response = await axios.get("https://djaback.onrender.com/api/Task/");
                 setTasks(response.data);
             } catch (error) {
                 console.error("Error fetching tasks:", error);
